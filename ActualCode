@@ -1,0 +1,25 @@
+"""
+Convert standard form to the parallel slope-intercept form
+"""
+print("Example: 3x+4y=8 and contains (6,3)")
+#this block asks for the a and b variable
+a= int(input("What is the digit infront of x?"))
+b= int(input("What is the digit infront y?"))
+
+#this solves for m (the slope) 
+m=(-a/b)
+
+#this asks for the coordinates
+xcoo= int(input("What is the x coordinate?"))
+ycoo= int(input("What is the y coordinate?"))
+
+#this finds b
+#changes both b and the slope to a fraction
+b=xcoo*m
+ycoo2=ycoo/1
+bm=b+ycoo2
+bm2=(bm).as_integer_ratio()
+m2=(m).as_integer_ratio()
+
+#this prints the final slope-intercept with fractions
+print("y=",m2,"x","-",bm2)
